@@ -1,0 +1,31 @@
+{% extends 'main.html' %}
+{% block content %}
+{% include 'header.html' %}
+	<section class="container">
+		<div class="form-box">
+			<form class="add-form" action="{{url_for('addItem',category_id=category_id)}}" method='post'>
+				<h2>Add Item</h2>
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input type="text" name="name" placeholder="ex: Fit Me Matte + Poreless Foundation" onfocus="this.placeholder=''" onblur="this.placeholder='ex: Fit Me Foundation'">
+				</div>
+				<div class="form-group">
+					<label for="brand">Brand:</label>
+					<input type="text" name="brand" placeholder="ex: Maybelline" onfocus="this.placeholder=''" onblur="this.placeholder='ex: Maybelline'">
+				</div>
+				<div class="form-group">
+					<label for="description">Description:</label>
+					<textarea rows="4" name="description" placeholder="ex: Fit Me! Matte + Poreless from Maybelline goes beyond skin tone matching..." onfocus="this.placeholder=''" onblur="this.placeholder='ex: Fit Me! Matte + Poreless from Maybelline goes beyond skin tone matching...'"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="image">Image:</label>
+					<input type="text" name="image" placeholder="ex: http://www.image-url.com/path_to_image.jpg" onfocus="this.placeholder=''" onblur="this.placeholder='ex: http://www.image-url.com/path_to_image.jpg'">
+				</div>
+				<div class="btns">
+					<button type="submit" class="">Add</button>
+					<a href="{{url_for('viewCategories')}}">Cancel</a>
+				</div>
+			</form>
+		</div>
+	</section>
+{% endblock %}

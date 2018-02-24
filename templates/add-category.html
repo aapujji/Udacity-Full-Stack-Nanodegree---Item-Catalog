@@ -1,0 +1,23 @@
+{% extends 'main.html' %}
+{% block content %}
+{% include 'header.html' %}
+	<section class="container">
+		<div class="form-box">
+			<form class="add-form" action="{{url_for('addCategory')}}" method='post'>
+				<h2>Add Category</h2>
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input type="text" name="name" placeholder="ex: Fit Me Matte + Poreless Foundation" onfocus="this.placeholder=''" onblur="this.placeholder='ex: Fit Me Foundation'">
+				</div>
+				<div class="form-group">
+					<label for="image">Image:</label>
+					<input type="text" name="image" placeholder="ex: http://www.image-url.com/path_to_image.jpg" onfocus="this.placeholder=''" onblur="this.placeholder='ex: http://www.image-url.com/path_to_image.jpg'">
+				</div>
+				<div class="btns">
+					<button type="submit" class="">Add</button>
+					<a href="{{url_for('viewCategories')}}">Cancel</a>
+				</div>
+			</form>
+		</div>
+	</section>
+{% endblock %}

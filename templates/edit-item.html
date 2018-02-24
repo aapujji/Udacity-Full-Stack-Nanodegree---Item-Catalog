@@ -1,0 +1,31 @@
+{% extends 'main.html' %}
+{% block content %}
+{% include 'header.html' %}
+		<section class="container">
+			<div class="form-box">
+				<form class="add-form" action="#" method="post">
+					<h2>Edit Item</h2>
+					<div class="form-group">
+						<label for="name">Name:</label>
+						<input type="text" value="{{item.name}}" name="name" placeholder="ex: Fit Me Matte + Poreless Foundation" onfocus="this.placeholder=''" onblur="this.placeholder='ex: Fit Me Foundation'">
+					</div>
+					<div class="form-group">
+						<label for="brand">Brand:</label>
+						<input type="text" value="{{item.brand}}" name="brand" placeholder="ex: Maybelline" onfocus="this.placeholder=''" onblur="this.placeholder='ex: Maybelline'">
+					</div>
+					<div class="form-group">
+						<label for="description">Description:</label>
+						<textarea rows="4" value="{{item.description}}" name="description" placeholder="ex: Fit Me! Matte + Poreless from Maybelline goes beyond skin tone matching..." onfocus="this.placeholder=''" onblur="this.placeholder='ex: Fit Me! Matte + Poreless from Maybelline goes beyond skin tone matching...'">Fit Me! Matte + Poreless from Maybelline goes beyond skin tone matching to fit the unique texture issues of normal to oily skin for the ultimate natural skin fit. While some foundations can exaggerate pores and oily skin, only Maybelline's pore-minimizing foundation contains their genius blurring micro-powders that erase pores and absorb oil for a naturally matte and poreless-looking finish.</textarea>
+					</div>
+					<div class="form-group">
+						<label for="image">Image:</label>
+						<input type="text" value="{{item.image}}" name="image" placeholder="ex: http://www.image-url.com/path_to_image.jpg" onfocus="this.placeholder=''" onblur="this.placeholder='ex: http://www.image-url.com/path_to_image.jpg'">
+					</div>
+					<div class="btns">
+						<button type="submit" class="">Save</button>
+						<a href="{{url_for('viewCategories')}}">Cancel</a>
+					</div>
+				</form>
+			</div>
+		</section>
+{% endblock %}

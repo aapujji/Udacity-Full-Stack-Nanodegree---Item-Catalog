@@ -1,0 +1,38 @@
+{% extends 'main.html' %}
+{% block content %}
+{% include 'header.html' %}
+	<section class="container">
+		<h1>Recently Added</h1>
+		<ul class="recently-added">
+			{% for i in items[:3] %}
+				<li>
+					<a href="{{url_for('viewItem', category_id = i.category.id, item_id = i.id)}}">
+						<p>{{i.name}}</p>
+						<span>{{i.brand}}</span>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+		<div class="title">
+			<h1>Categories</h1>
+			<a href="{{url_for('addCategory')}}"><img src="../static/plus.svg" alt="" /></a>
+		</div>
+		<ul class="cards-list">
+			{% for category in categories %}
+				<li>
+					<a href="{{url_for('viewItems', category_id = category.id)}}" class="box-link"></a>
+						<div class="card-img" style="background-image: url({{category.image}});">
+							<div class="action-btns">
+								<a href="{{url_for('editCategory', category_id = category.id)}}" class="btn"><i class="fas fa-pencil-alt"></i></a>
+								<a href="{{url_for('deleteCategory', category_id = category.id)}}" class="btn"><i class="far fa-trash-alt"></i></a>
+							</div>
+						</div>
+						<div class="card-text">
+							<h3>{{category.name}}</h3>
+						</div>
+				</li>
+			{% endfor %}
+			<li class="fill-empty-space"></li>
+		</ul>
+	</section>
+{% endblock %}
