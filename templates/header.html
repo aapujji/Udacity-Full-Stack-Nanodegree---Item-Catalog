@@ -1,4 +1,7 @@
 <header class="header">
-
-		<a href="" class="btn">Login</a>
+	{%if 'username' not in session %}
+		<a href="{{url_for('showLogin')}}" class="btn">Login</a>
+	{% else %}
+		<a href="{{url_for('gdisconnect')}}" class="btn">Logout</a>
+	{% endif %}
 </header>
