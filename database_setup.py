@@ -2,14 +2,12 @@ import os
 import sys
 from sqlalchemy import Column, ForeignKey, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, ForeignKey, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
 
 Base = declarative_base()
 
-    
+
 class User(Base):
     __tablename__ = 'user'
 
@@ -61,6 +59,6 @@ class Item(Base):
         }
 
 
-engine = create_engine('sqlite:///itemcatalog.db')
+engine = create_engine('sqlite:///itemcatalogwithusers.db')
 
 Base.metadata.create_all(engine)

@@ -10,8 +10,10 @@
 		<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Muli:300,700,800" rel="stylesheet">
 
+		<!--LOAD PRE-REQUISITES FOR GOOGLE SIGN IN -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="{{url_for('static', filename='app.js')}}"></script>
+		<script src="//apis.google.com/js/platform.js?onload=start"> </script>
+		<!-- END PRE-REQUISITES FOR GOOGLE SIGN IN -->
 	</head>
 	<body>
 		{% block content %}
