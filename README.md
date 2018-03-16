@@ -2,6 +2,8 @@
 
 ## Description
 
+Conceptualized and constructed an online catalog using knowledge of SQL databases, Python programming and front end development best practices. The application allows visitors to sign up or log in and view, edit, and delete categories of items as well as items. This project was built using the Flask framework.
+
 ## Setup
 
 1. Make sure you have Python2.7, Vagrant and VirtualBox installed on your computer. (Download links are provided below.)
