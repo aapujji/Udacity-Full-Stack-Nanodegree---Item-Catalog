@@ -14,10 +14,14 @@
 
 2. Downlaod the vm [here](https://github.com/udacity/fullstack-nanodegree-vm)
 
-3. Run database_setup.py to create the database for this project.
+3. Obtain Google Client ID and Client Secret:
 
-4. Run populatedb.py to populate the database with information.
+    (a) Go to https://console.developers.google.com/apis
 
-5. Run item-catalog.py to start the application.
+4. Run database_setup.py to create the database for this project.
 
-6. VIsit 'http://localhost:5000' in your browser to view the running application.
+5. Run populatedb.py to populate the database with information.
+
+6. Run item-catalog.py to start the application.
+
+7. VIsit 'http://localhost:5000' in your browser to view the running application.
