@@ -14,4 +14,10 @@
 
 2. Downlaod the vm [here](https://github.com/udacity/fullstack-nanodegree-vm)
 
-3.
+3. Run database_setup.py to create the database for this project.
+
+4. Run populatedb.py to populate the database with information.
+
+5. Run item-catalog.py to start the application.
+
+6. VIsit 'http://localhost:5000' in your browser to view the running application.
