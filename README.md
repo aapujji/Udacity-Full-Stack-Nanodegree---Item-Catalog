@@ -16,7 +16,23 @@
 
 3. Obtain Google Client ID and Client Secret:
 
-    (a) Go to https://console.developers.google.com/apis
+    (1) Go to the [Google APIs Console](https://console.developers.google.com/apis)
+    
+    (2) Sign in to your Google account. If you don't already have a Google account, you will have to sign up for one.
+    
+    (3) In the sidebar, click Credentials.
+    
+    (4) Create a new project and give it a name.
+    
+    (5) Click the 'Oauth Consent Screen' tab and fill out the product name, and save.
+    
+    (6) Click 'Create credentials' and choose 'OAuth Client Id' and then select web application for application type.
+    
+    (7) Give the web application a name. For Authorized Javascript Origins and Authorized redirect URLs, make sure to add 'http://localhost:5000'.
+    
+    (8) Copy the Client ID and use it to replace 'YOUR-CLIENT-ID' in login.html.
+    
+    (9) Download the JSON file and save it as 'client_secrets.json' in the same directory as the project files.
 
 4. Run database_setup.py to create the database for this project.
 
