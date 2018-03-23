@@ -1,8 +1,8 @@
-# Udacity-Full-Stack-Nanodegree---Item-Catalog
+# Udacity-Full-Stack-Nanodegree---Item-Catalog version 1.0 03/23/18
 
 ## Description
 
-Conceptualized and constructed an online catalog using knowledge of SQL databases, Python programming and front end development best practices. The application allows visitors to sign up or log in and view, edit, and delete categories of items as well as items. This project was built using the Flask framework.
+Conceptualized and constructed an online catalog using knowledge of SQL databases, Python programming and front end development best practices. The application allows visitors to sign up or log in and view, edit, and delete categories of items as well as items. This project was built using the Flask framework. To setup this app on your local machine, refer to the 'Setup' seciton of this readme.
 
 ## Setup
 
@@ -43,3 +43,7 @@ Conceptualized and constructed an online catalog using knowledge of SQL database
 6. Run item-catalog.py to start the application.
 
 7. VIsit 'http://localhost:5000' in your browser to view the running application.
+
+## Contact
+
+For questions, comments or suggestions please send them to aapujji@yahoo.com.
